@@ -11,11 +11,12 @@ var tweets=[
 prompt("email:")
 prompt("password:")
 function sign(){
-    if((email=="anarfarzaliyev@gmail.com"&&  password=="12345")
-    ||(email=="anarfarzaliyev9@gmail.com"&&  password=="12345")){
+    if((email==users[0].email&&  password==users[0].password)
+    ||(email==users[1].email&&  password==users[1].password)){
         console.log(tweets)
     }
     else{
         console.log("incorrect data")
     }
 }
+sign(email,password)
